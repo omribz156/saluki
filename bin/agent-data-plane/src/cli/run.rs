@@ -8,8 +8,8 @@ use datadog_agent_commons::platform::PlatformSettings;
 use futures::FutureExt as _;
 use memory_accounting::{ComponentBounds, ComponentRegistry};
 use saluki_app::{
+    accounting::{initialize_memory_bounds, MemoryBoundsConfiguration},
     bootstrap::BootstrapGuard,
-    memory::{initialize_memory_bounds, MemoryBoundsConfiguration},
     metrics::emit_startup_metrics,
 };
 use saluki_components::{
