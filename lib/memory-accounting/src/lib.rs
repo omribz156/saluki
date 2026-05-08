@@ -83,8 +83,8 @@ use std::collections::HashMap;
 pub mod test_util;
 
 pub mod allocator;
-pub(crate) mod cpu;
 mod api;
+pub(crate) mod cpu;
 pub use self::api::MemoryAPIHandler;
 
 mod registry;
